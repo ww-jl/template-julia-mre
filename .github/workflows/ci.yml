@@ -42,7 +42,7 @@ jobs:
       with:
         version: ${{ steps.read_toml.outputs.value }}
     - name: Cache Julia packages
-      uses: actions/cache@v4
+      uses: actions/cache@v5
       id: cache-julia
       with:
         save-always: 'true'
